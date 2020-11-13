@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:background="@drawable/rounded_backround_item_sound">
+
+    <ImageView
+        android:id="@+id/movie_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_image"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="@dimen/movie_title_padding"
+        android:paddingTop="@dimen/movie_title_padding"
+        android:paddingRight="@dimen/movie_title_padding"
+        android:text="temp text"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#353535"
+        android:textSize="@dimen/movie_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:id="@+id/movie_image"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:scaleType="fitXY"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/movie_image"-->
+<!--            android:paddingLeft="@dimen/movie_title_padding"-->
+<!--            android:paddingRight="@dimen/movie_title_padding"-->
+<!--            android:paddingTop="@dimen/movie_title_padding"-->
+<!--            android:textColor="#484848"-->
+<!--            android:text="temp text"-->
+<!--            android:textSize="@dimen/movie_title"/>-->
+
+
+
+<!--    </RelativeLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
